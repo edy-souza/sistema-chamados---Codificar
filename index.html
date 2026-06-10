@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Chamados Internos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Sistema de Chamados Internos</h1>
+
+  <!-- FORMULÁRIO -->
+  <section>
+    <h2>Novo Chamado</h2>
+
+    <input type="text" id="titulo" placeholder="Título"><br><br>
+
+    <textarea id="descricao" placeholder="Descrição"></textarea><br><br>
+
+    <select id="prioridade">
+      <option value="baixa">Baixa</option>
+      <option value="media">Média</option>
+      <option value="alta">Alta</option>
+    </select><br><br>
+
+    <select id="responsavel">
+      <option value="">Selecionar responsável</option>
+    </select><br><br>
+
+    <button onclick="criarChamado()">Criar chamado</button>
+    <button onclick="atribuirAutomatico()">Atribuir automaticamente</button>
+  </section>
+
+  <hr>
+
+  <!-- LISTA -->
+  <section>
+    <h2>Chamados</h2>
+    <div id="listaChamados"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

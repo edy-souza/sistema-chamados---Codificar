@@ -42,12 +42,14 @@ button {
 /* botão criar chamado (primeiro botão) */
 button[onclick="criarChamado()"] {
   background: #2d6cdf;
+  margin: 10px;
   color: white;
 }
 
 /* botão automático */
 button[onclick="atribuirAutomatico()"] {
   background: #28a745;
+  margin: 10px;
   color: white;
 }
 

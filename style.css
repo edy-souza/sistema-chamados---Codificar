@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* BOTÕES */
+button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* botão criar chamado (primeiro botão) */
+button[onclick="criarChamado()"] {
+  background: #2d6cdf;
+  color: white;
+}
+
+/* botão automático */
+button[onclick="atribuirAutomatico()"] {
+  background: #28a745;
+  color: white;
+}
+
+/* lista de chamados */
+#listaChamados div {
+  background: #fafafa;
+  border-left: 5px solid #2d6cdf;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}

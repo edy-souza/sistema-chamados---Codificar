@@ -6,10 +6,12 @@ let chamados = JSON.parse(localStorage.getItem("chamados")) || [];
 
 // considerado "em aberto": status !== "fechado"
 
+// Função que retorna a data e hora atual formatada como string
 function agora() {
   return new Date().toLocaleString();
 }
 
+// Função responsável por preencher o select de responsáveis no formulário
 function carregarResponsaveis() {
   const select = document.getElementById("responsavel");
 
@@ -21,6 +23,8 @@ function carregarResponsaveis() {
   });
 }
 
+
+// Função responsável por criar um novo chamado
 function criarChamado() {
   const titulo = document.getElementById("titulo").value;
   const descricao = document.getElementById("descricao").value;
@@ -44,10 +48,13 @@ function criarChamado() {
 }
 
 
+// Função responsável por salvar os chamados no localStorage
 function salvar() {
   localStorage.setItem("chamados", JSON.stringify(chamados));
 }
 
+
+// Função responsável por renderizar (exibir) os chamados na tela
 function renderizarChamados() {
   const lista = document.getElementById("listaChamados");
   lista.innerHTML = "";
@@ -69,6 +76,8 @@ function renderizarChamados() {
 
 renderizarChamados();
 
+
+// Função que define automaticamente o responsável com menor carga de trabalho
 function atribuirAutomatico() {
   const contagem = {};
 
